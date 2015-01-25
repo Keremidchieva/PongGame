@@ -1,12 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\BallControl.js">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\PongGame - Copy\Assets\BallControl.js">
     <Files>
-      <File FileName="Assets\BallControl.js" Line="17" Column="9" />
-      <File FileName="Assets\PlayerControls.js" Line="1" Column="1" />
-      <File FileName="Assets\GameSetup.js" Line="27" Column="2" />
-      <File FileName="Assets\GameManager.js" Line="33" Column="45" />
-      <File FileName="Assets\SideWalls.js" Line="1" Column="1" />
+      <File FileName="..\PongGame - Copy\Assets\GameManager.js" Line="1" Column="1" />
+      <File FileName="..\PongGame - Copy\Assets\BallControl.js" Line="46" Column="40" />
+      <File FileName="..\PongGame - Copy\Assets\GameSetup.js" Line="1" Column="1" />
+      <File FileName="..\PongGame - Copy\Assets\PlayerControls.js" Line="13" Column="7" />
+      <File FileName="..\PongGame - Copy\Assets\SideWalls.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

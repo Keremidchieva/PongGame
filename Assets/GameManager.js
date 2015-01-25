@@ -1,6 +1,4 @@
-﻿#pragma strict
-
-static var playerScore01 = 0;
+﻿static var playerScore01 = 0;
 static var playerScore02 = 0;
 
 var skin: GUISkin;

@@ -1,6 +1,4 @@
-﻿#pragma strict
-
-var mainCam: Camera;
+﻿var mainCam: Camera;
 var topWall: BoxCollider2D;
 var bottomWall: BoxCollider2D;
 var leftWall: BoxCollider2D;

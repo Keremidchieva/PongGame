@@ -1,6 +1,4 @@
-﻿#pragma strict
-
-var ballSpeed: float = 100;
+﻿var ballSpeed: float = 70;
 
 function Start () {
 	yield WaitForSeconds (1);
@@ -9,17 +7,26 @@ function Start () {
 
 function Update(){
 	var xVel: float = rigidbody2D.velocity.x;
-	Debug.Log ("vel " + xVel);
-	if (xVel < 13 && xVel > -13 && xVel != 0) {
+	var wantedVel = 14;
+//	Debug.Log ("vel " + xVel);
+	if (xVel < wantedVel && xVel > -wantedVel && xVel != 0) {
 		if (xVel > 0) {
-			rigidbody2D.velocity.x = 14;
+			rigidbody2D.velocity.x = wantedVel;
 		}
 		else {
-			rigidbody2D.velocity.x = -14;
+			rigidbody2D.velocity.x = -wantedVel;
 		}
+	}
+	else if (xVel > wantedVel && xVel < -wantedVel && xVel != 0) {
+		if (xVel > 0) {
+			rigidbody2D.velocity.x = wantedVel;
+		}
+		else {
+			rigidbody2D.velocity.x = -wantedVel;
+		}
+	}
 //		Debug.Log ("Velocity before " + xVel);
 //		Debug.Log ("Velocity after " + rigidbody2D.velocity.x);
-	}
 }
 
 function OnCollisionEnter2D (colInfo: Collision2D) {
@@ -34,7 +41,7 @@ function ResetBall () {
 	rigidbody2D.velocity.x = 0;
 	rigidbody2D.velocity.y = 0;
 	transform.position.x = 0;
-	transform.position.y = 0;
+	transform.position.y = Random.Range(-2, 2);
 	
 	yield WaitForSeconds (0.5);
 	GoBall();
